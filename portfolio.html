@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+     *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     body{
+        background: #081b29;
+        /* display: flex; */
+        text-transform: capitalize;
+        color: #ededed;
+     }
+     .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 10%;
+        background: transparent;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100%;
+     }
+     .amm{
+        font-size: 25px;
+        color: #ededed;
+        font-weight: 600;
+        text-decoration: none;
+
+     }
+     .navbar a{
+        font-size: 18px;
+        color: #ededed;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 35px;
+     }
+     .navbar a:hover{
+        color: #00abf0;
+     }
+     .navbar .active{
+        color: #00abf0;
+     }
+     .home{
+        display: flex;
+        height: 100vh;
+        align-items: center;
+        padding: 0 10%;
+     }
+     .homecontact{
+        max-width: 500px;
+     }
+     .homecontact h1{   
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 1.2;
+     }
+     .homecontact h3{
+        font-size: 32px;
+        font-weight: 700;
+        color: #00abf0;
+     }
+     .homecontact p{
+        font-size: 16px;
+        margin: 20px 0 40px;
+     }
+     .homecontact .btn{
+        display: flex;
+        justify-content: space-between;
+        width: 345px;
+        height: 50px;
+     }
+     .btn a{
+        position:  relative;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 100%;
+        background: #00abf0;
+        border: 2px solid #00abf0;
+        border-radius: 8px;
+        font-size: 19px;
+        color: #081b29;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
+      }
+      .btn a:nth-child(2){
+          background: transparent;
+          color: #00abf0;}
+          
+      .btn a:hover{
+         color: #00abf0;
+      }
+      .btn,a::before {
+      content: '';
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 0;
+     height: 100%;
+     background: #081b29;
+     z-index: -1;
+     transition:.5s;
+     z-index: -1;
+     
+    }
+    .mediabutton .link{
+      margin top: 20px;
+    }
+     /* .btn a:hover::before {
+        width: 100%;
+     }
+      */
+    
+    /* .btn a:nth-child(2):hover{
+       color: #081b29;
+    }
+    .btn a:nth-child(2)::before {
+      background: #00abf0;} */
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="amm">Ammar.</a>
+        <div class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Survices</a>
+            <a href="#">Contact</a>
+            <a href="#">Portfolio</a>
+        </div>
+    </header>
+    <section class="home">
+        <div class="homecontact">
+            <h1>hi i am ammar hassan</h1>
+            <h3>frontend develper</h3>
+            <p>hi i am frontend devolper i am working in this field since almost 2 year i have very good experience working with senior.and i can create attractive pages !</p>
+            <div class="btn">
+                <a href="#">Hire me</a>
+                <a href="#">lets talk</a>
+            </div>
+            <div class="mediabutton">
+               <a href="#" style="background: #4267b2;" class="link">
+                  <i class='bx bxl-facebook'></i>
+               </a>
+               <a href="#" style="background: #1da1f2;" class="link">
+                   <i class='bx bxl-twitter'></i>
+                </a>
+                <a href="#" style="background: #e1306c;" class="link">
+                   <i class='bx bxl-instagram'></i>
+                </a>
+                <a href="#" style="background: #ff0000;" class="link">
+                   <i class='bx bxl-youtube'></i>
+                </a>
+          </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
